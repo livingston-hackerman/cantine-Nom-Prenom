@@ -12,9 +12,7 @@ let quantite = Number("3")
 let montantVers = 5000
 let prixUnitaire = 0
 
-// III. Déclarez les données de la commande.
-
-// IV. Calculez le montant de la commande.
+// III. Determinez le prix unitaire
 
     if(codeDuPlat == 1){
     prixUnitaire = attiekePoisson
@@ -25,5 +23,12 @@ let prixUnitaire = 0
     else {
     prixUnitaire = allocoOeuf
     }
-console.log(' le prix unitaire du plat de awa est '+prixUnitaire);
+console.log(' le prix unitaire du plat de awa est '+prixUnitaire+' FCFA '); 
 
+// IV. Calculez le montant de la commande.
+
+function calculerTotal(prixUnitaire, quantite) {
+    return prixUnitaire*quantite;
+}
+let montant = (calculerTotal(prixUnitaire, quantite))
+console.log(' le montant total est '+montant+' FCFA ');
