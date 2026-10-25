@@ -33,7 +33,7 @@ function calculerTotal(prixUnitaire, quantite) {
 let montant = (calculerTotal(prixUnitaire, quantite))
 console.log(`Le montant total est ${montant} FCFA`)
 
-// Affichez le récapitulatif
+// V. Affichez le récapitulatif
 
 let portion = 1
 for (portion = 1; portion <= quantite; portion++) {
@@ -43,9 +43,11 @@ console.log(`Client : ${client}`)
 console.log(`Total à payer : ${montant} FCFA`)
 console.log(`montant versé : ${montantVerse} FCFA`)
 
+// VI. Verifications
+
 if(montant<montantVerse){
-  console.log(`montant à rendre ${montantVerse-montant}`)
+  console.log(`montant à rendre ${montantVerse-montant} FCFA`)
 }
 else{
-  console.log(`montant manquant ${montant-montantVerse}`)
+  console.log(`montant manquant ${montant-montantVerse} FCFA`)
 }
