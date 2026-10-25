@@ -14,15 +14,15 @@ let prixUnitaire = 0
 
 // III. Determinez le prix unitaire
 
-    if(codeDuPlat == 1){
-    prixUnitaire = attiekePoisson
-    }
-    else if(codeDuPlat == 2){
-    prixUnitaire = rizPoulet
-    }
-    else {
-    prixUnitaire = allocoOeuf
-    }
+if(codeDuPlat == 1){
+   prixUnitaire = attiekePoisson
+}
+else if(codeDuPlat == 2){
+   prixUnitaire = rizPoulet
+}
+else {
+   prixUnitaire = allocoOeuf
+}
 console.log(`Le prix unitaire du plat de ${client} est ${prixUnitaire} FCFA`) 
 
 // IV. Calculez le montant de la commande.
@@ -41,3 +41,11 @@ console.log(`Portion ${portion}`)
 }
 console.log(`Client : ${client}`)
 console.log(`Total à payer : ${montant} FCFA`)
+console.log(`montant versé : ${montantVerse} FCFA`)
+
+if(montant<montantVerse){
+  console.log(`montant à rendre ${montantVerse-montant}`)
+}
+else{
+  console.log(`montant manquant ${montantVerse-montant}`)
+}
