@@ -7,9 +7,9 @@ const rizPoulet = 2000
 const allocoOeuf = 1000
 
 let client = "Awa"
-let codeDuPlat = 3
-let quantite = Number("4")
-let montantVerse = 4000
+let codeDuPlat = 1
+let quantite = Number("3")
+let montantVerse = 5000
 let prixUnitaire = 0
 
 // III. Determinez le prix unitaire
