@@ -1,11 +1,11 @@
-const AttiékéPoisson = 1500
-const RizPoulet = 2000
-const AllocoOeuf = 1000
+const attiekePoisson = 1500
+const rizPoulet = 2000
+const allocoOeuf = 1000
 
-let commande = 0
 let client = "Awa"
-let codeDuPlat = 0
-let quantité = "3"
+let codeDuPlat = 1
+let quantite = Number("3")
+let montantVers = 5000
 
 
 
