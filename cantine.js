@@ -7,9 +7,9 @@ const rizPoulet = 2000
 const allocoOeuf = 1000
 
 let client = "Awa"
-let codeDuPlat = 1
-let quantite = Number("3")
-let montantVerse = 5000
+let codeDuPlat = 2
+let quantite = Number("2")
+let montantVerse = 3000
 let prixUnitaire = 0
 
 // III. Determinez le prix unitaire
@@ -47,5 +47,5 @@ if(montant<montantVerse){
   console.log(`montant à rendre ${montantVerse-montant}`)
 }
 else{
-  console.log(`montant manquant ${montantVerse-montant}`)
+  console.log(`montant manquant ${montant-montantVerse}`)
 }
