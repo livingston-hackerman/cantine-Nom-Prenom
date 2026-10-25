@@ -9,7 +9,7 @@ const allocoOeuf = 1000
 let client = "Awa"
 let codeDuPlat = 1
 let quantite = Number("3")
-let montantVers = 5000
+let montantVerse = 5000
 let prixUnitaire = 0
 
 // III. Determinez le prix unitaire
@@ -23,7 +23,7 @@ let prixUnitaire = 0
     else {
     prixUnitaire = allocoOeuf
     }
-console.log(' le prix unitaire du plat de awa est '+prixUnitaire+' FCFA '); 
+console.log(`Le prix unitaire du plat de ${client} est ${prixUnitaire} FCFA`) 
 
 // IV. Calculez le montant de la commande.
 
@@ -31,4 +31,13 @@ function calculerTotal(prixUnitaire, quantite) {
     return prixUnitaire*quantite;
 }
 let montant = (calculerTotal(prixUnitaire, quantite))
-console.log(' le montant total est '+montant+' FCFA ');
+console.log(`Le montant total est ${montant} FCFA`)
+
+// Affichez le récapitulatif
+
+let portion = 1
+for (portion = 1; portion <= quantite; portion++) {
+console.log(`Portion ${portion}`)
+}
+console.log(`Client : ${client}`)
+console.log(`Total à payer : ${montant} FCFA`)
